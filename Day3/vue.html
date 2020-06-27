@@ -6,21 +6,27 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="app">
+    <div id="app">
       <section>
         <div class="container">
           <div class="title">
             <img class="logo" />
-            <h1></h1>
+            <h1>{{title}}</h1>
+            <h1 v-text="title"></h1>
           </div>
         </div>
       </section>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script>
     <script>
       let data = {
         src: "./images/vue.png",
         title: "手牽手一起嗑全家桶",
       };
+      let vm = new Vue({
+        el: "#app",
+        data: data,
+      });
     </script>
   </body>
 </html>
