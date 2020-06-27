@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="app">
+      <section>
+        <div class="container">
+          <div class="title">
+            <img class="logo" />
+            <h1></h1>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script>
+      let data = {
+        src: "./images/vue.png",
+        title: "手牽手一起嗑全家桶",
+      };
+      $(".title > h1").text(data.title);
+      $(".logo").attr("src", data.src);
+    </script>
+  </body>
+</html>
